@@ -1,7 +1,7 @@
 
 require 'rbconfig'
 
-conf = Config::CONFIG
+conf = RbConfig::CONFIG
 
 File.unlink('Makefile.old') rescue nil
 File.rename('Makefile', 'Makefile.old') rescue nil
